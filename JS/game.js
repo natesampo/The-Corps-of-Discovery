@@ -16,7 +16,7 @@ var distance = 0;
 var nextLandmark = 0;
 var dayTime = 30;
 var dayTick = 0;
-var speeds = {"horse": 12, "boat": 11, "walk": 6, "canoe": 13, "fort": 0}
+var speeds = {"horse": 8, "boat": 8, "walk": 5, "canoe": 9, "fort": 0}
 var daysInMonths = {"January": 31, "February": 28, "March": 31, "April": 30, "May": 31, "June": 30, "July": 31, "August": 31, "September": 30, "October": 31, "November": 30, "December": 31};
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var eventTimer = 99999;
@@ -100,7 +100,7 @@ var landmarks = [{
 	distance: 1660,
 	type: "village",
 	text: "The expedition has reached the Native Mandan and Hidatsa villages near the northern border of Jefferson's Louisiana Purchase. Both Lewis and Clark agree that this would be the perfect wintering location. While building Mandan Fort, Lewis and Clark meet and hire Toussaint Charbonneau, a French fur trapper. One of his two wives, the pregnant Sacagawea, agrees to accompany the expedition to the Pacific.",
-	func: function() {food += 200; travel = "fort"; dayTime = 6; winter = true; eventTimer = 1000;}
+	func: function() {food += 200; travel = "fort"; dayTime = 6; winter = true; eventTimer = 1500;}
 },
 {
 	distance: 1800,
@@ -109,7 +109,7 @@ var landmarks = [{
 },
 {
 	distance: 1900,
-	text: "Lewis and a crew member successfully hunted a grizzly bear, yielding large amounts of food. The expedition gains 500 pounds of pounds of food and loses 10 ammunition.",
+	text: "Lewis and a crew member successfully hunted a grizzly bear, yielding large amounts of food. The expedition gains 500 pounds of food and loses 10 ammunition.",
 	func: function() {food += 500; ammo -= 10;}
 },
 {
