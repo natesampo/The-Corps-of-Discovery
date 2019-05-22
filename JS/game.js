@@ -154,7 +154,7 @@ var landmarks = [{
 },
 {
 	distance: 3160,
-	text: "After successfully crossing the Bitterroot Mountains, the expedition meet a group of Flathead Natives and are able to purchase more horses off of them.",
+	text: "After successfully crossing the Bitterroot Mountains, the expedition meet a group of Flathead Natives and are able to purchase more horses from them.",
 	func: function() {horses = true; travel = "horse";}
 },
 {
@@ -420,7 +420,7 @@ setInterval(function() {
 						travel = "walk";
 					}
 					horses = false;
-					food += 1000;
+					food += 500;
 					opt = true;
 					timer = 400;
 					eventTimer = 1000;
